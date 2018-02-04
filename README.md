@@ -47,10 +47,12 @@ pip install keras # Possibly older release: conda install keras
 - Test the converted model on the small test set in `images/`.
 
 ```bash
-#get the yolo weights from yolo website,is not possible ,u can also download from baidu yun,the url is:   https://pan.baidu.com/s/1smRMvBv
+#get the yolo weights from yolo website,is not possible ,
+#u can also download from baidu yun,the url is:   https://pan.baidu.com/s/1smRMvBv
 wget http://pjreddie.com/media/files/yolo.weights
 wget https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolo.cfg
-###create .h5 files for kearas framework,here is my yolo.h5:
+###create .h5 files for kearas framework,
+##here is my yolo.h5:  https://pan.baidu.com/s/1kVVgj5d
 ./yad2k.py yolo.cfg yolo.weights model_data/yolo.h5
 ### use test_yolo and .h5 weights to predict images from ./images/*.jpg,resulsts are stored on ./images/out/* 
 ./test_yolo.py model_data/yolo.h5  # output in images/out/
